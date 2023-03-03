@@ -7,11 +7,11 @@ def before_scenario(context, driver):
 
     UtilityClass.launch_app(context)
     context.driver.implicitly_wait(10)
-    print("Before Scenario")
+   
 
 
 def after_scenario(context, driver):
     context.driver.implicitly_wait(10)
     UtilityClass.close_browser(context)
-    print("After Scenario")
+    
 
